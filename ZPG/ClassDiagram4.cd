@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Application" Collapsed="true">
+    <Position X="9.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAACAAACACYIAAAAAAAAAAA=</HashCode>
+      <FileName>Application.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controls" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Camera" Collapsed="true">
+    <Position X="6.75" Y="5" Width="1.5" />
+    <InheritanceLine Type="AbstractSubject" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="3.062" />
+        <Point X="8.5" Y="4.625" />
+        <Point X="8.25" Y="4.625" />
+        <Point X="8.25" Y="5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ABgAAAIlCgAAICIQAAARMBCCAAgAACQggAAACkgAACA=</HashCode>
+      <FileName>Camera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AbstractObserver">
+    <Position X="1" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>AbstractObserver.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Controls" Collapsed="true">
+    <Position X="9.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACALAAQGAwAQAACAAAAAAJAAAAAIACQlAEggAAACABA=</HashCode>
+      <FileName>Controls.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="camera" />
+      <Field Name="scene" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Light" Collapsed="true">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIEgAjAAAIAAQAAIAIgACAAAACICAAAAAiABIAAA=</HashCode>
+      <FileName>Light.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model">
+    <Position X="4.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAEAAA=</HashCode>
+      <FileName>Model.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectLoader">
+    <Position X="1.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAQAAAAAAAYAAAAAgA=</HashCode>
+      <FileName>ObjectLoader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scene">
+    <Position X="12.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABoCABAAQgIIAgAAAQAIAAoCKAIEHEAAACAA=</HashCode>
+      <FileName>Scene.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="camera" />
+      <Field Name="lambert" />
+      <Field Name="light1" />
+      <Field Name="light" />
+      <Field Name="light2" />
+      <Field Name="object1" />
+      <Field Name="object3" />
+      <Field Name="object4" />
+      <Field Name="object2" />
+      <Field Name="phong" />
+      <Field Name="plane" />
+      <Field Name="sphere" />
+      <Field Name="window" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Shader" Collapsed="true">
+    <Position X="7.75" Y="7.25" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="Shader::lightSource" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Shader.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAkAAACABgAAAAIAAAAAAgCAABoAAACABAAAEQwAgKA=</HashCode>
+      <FileName>Shader.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="camera" />
+      <Field Name="light" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ShaderLoader">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAACAAAAAAAAAAAAAAAAAAAgAAAEAAAAIAAAQAAA=</HashCode>
+      <FileName>ShaderLoader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AbstractSubject" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>AbstractSubject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Window" Collapsed="true">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAQIAAAAAAAAAAA=</HashCode>
+      <FileName>Window.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Object">
+    <Position X="15.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAIAAAQAAgACgBAAAABAACACAAACAAAAAgAAsgAA=</HashCode>
+      <FileName>Object.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="model" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="__unnamed_struct_000d_1" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAIAAACAAAAAAAAAgA=</HashCode>
+      <FileName>ObjectLoader.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="Vertex" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectLoader.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="direction" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAgAAAAAAAAAAAAICAAAgAIAAAAAAAAA=</HashCode>
+      <FileName>Direction.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
